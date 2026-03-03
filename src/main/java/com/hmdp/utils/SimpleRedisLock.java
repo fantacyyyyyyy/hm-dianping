@@ -23,6 +23,7 @@ public class SimpleRedisLock implements ILock {
         return Boolean.TRUE.equals(success);
     }
 
+
     @Override
     public void unlock() {
         String ID_PREFIX = UUID.randomUUID().toString(true) + "-";
